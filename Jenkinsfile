@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     triggers {
-        pollSCM('H/15 * * * *') // optional
+        pollSCM('H/15 * * * *')
     }
 
     stages {
         stage('Clone Repo') {
             steps {
-                git url: 'https://github.com/Jeevana-Sree/jenkins-practice'
+                git branch: 'main', url: 'https://github.com/Jeevana-Sree/jenkins-practice'
             }
         }
 
@@ -29,4 +29,3 @@ pipeline {
         }
     }
 }
-
