@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git 'git 'https://github.com/Jeevana-Sree/jenkins-practice'
+                git url: 'https://github.com/Jeevana-Sree/jenkins-practice'
 '
             }
         }
